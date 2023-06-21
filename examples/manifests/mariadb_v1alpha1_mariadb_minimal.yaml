@@ -1,7 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: violet
+  labels:
+    name: violet
+---
 apiVersion: mariadb.mmontes.io/v1alpha1
 kind: MariaDB
 metadata:
   name: mariadb
+  namespace: violet
 spec:
   rootPasswordSecretKeyRef:
     name: mariadb

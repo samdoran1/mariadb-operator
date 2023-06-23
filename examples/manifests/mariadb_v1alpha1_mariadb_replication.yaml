@@ -2,6 +2,7 @@ apiVersion: mariadb.mmontes.io/v1alpha1
 kind: MariaDB
 metadata:
   name: mariadb-repl
+  namespace: testnamespace1
 spec:
   rootPasswordSecretKeyRef:
     name: mariadb

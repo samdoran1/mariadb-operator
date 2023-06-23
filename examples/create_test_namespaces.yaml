@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: testnamespace1
+  labels:
+    name: testnamespace1
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: testnamespace2
+  labels:
+    name: testnamespace2
